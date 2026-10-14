@@ -288,7 +288,7 @@ button, input { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--hl); outline-offset: 2px; }
 
 /* Chinese as the supporting language: smaller, quieter, set in the CJK face */
-.zh {
+.zh { display: none !important; 
   margin-left: 0.4em;
   font-family: var(--font-zh);
   font-size: 0.86em;
@@ -330,7 +330,7 @@ h1 {
   text-wrap: balance;
 }
 h1 i { font-style: italic; }
-h1 .zh { margin-left: 0.5em; font-family: "Noto Serif TC", "Songti TC", serif; font-size: 0.5em; font-weight: 500; letter-spacing: 0.08em; }
+h1 .zh { display: none !important;  margin-left: 0.5em; font-family: "Noto Serif TC", "Songti TC", serif; font-size: 0.5em; font-weight: 500; letter-spacing: 0.08em; }
 .facts {
   margin: 0;
   font: var(--fs-xs)/1.5 var(--font-mono);
@@ -356,7 +356,7 @@ h1 .zh { margin-left: 0.5em; font-family: "Noto Serif TC", "Songti TC", serif; f
 .theme-switch button:first-child { border-left: 0; }
 .theme-switch button:hover { background: var(--field); }
 .theme-switch button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
-.theme-switch .zh { margin-left: 0.35em; font-size: 11px; letter-spacing: 0.02em; text-transform: none; color: inherit; opacity: 0.75; }
+.theme-switch .zh { display: none !important;  margin-left: 0.35em; font-size: 11px; letter-spacing: 0.02em; text-transform: none; color: inherit; opacity: 0.75; }
 
 /* ---------- main grid ---------- */
 .main {
@@ -575,7 +575,7 @@ h1 .zh { margin-left: 0.5em; font-family: "Noto Serif TC", "Songti TC", serif; f
   line-height: 1.45;
   pointer-events: none;
 }
-.tip .zh { color: var(--tip-muted); }
+.tip .zh { display: none !important;  color: var(--tip-muted); }
 .tip b { font-size: var(--fs-md); }
 .tip .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 
@@ -590,7 +590,7 @@ h2 {
   letter-spacing: -0.3px;
   text-wrap: balance;
 }
-h2 .zh { font-size: 13px; letter-spacing: 0.04em; }
+h2 .zh { display: none !important;  font-size: 13px; letter-spacing: 0.04em; }
 h2 .zh.block { margin-top: 3px; }
 .sub { margin: -4px 0 12px; font-size: var(--fs-sm); color: var(--ink-2); }
 .note { margin: 10px 0 0; font-size: var(--fs-xs); color: var(--muted); line-height: 1.5; }
@@ -601,7 +601,7 @@ h2 .zh.block { margin-top: 3px; }
 .legend { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
 .legend-group { margin: 6px 0 0; font: 500 10.5px var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 .legend-group:first-child { margin-top: 0; }
-.legend-group .zh { text-transform: none; letter-spacing: 0.02em; }
+.legend-group .zh { display: none !important;  text-transform: none; letter-spacing: 0.02em; }
 .legend-dist {
   display: grid;
   grid-template-columns: 22px minmax(0, 1fr) auto;
@@ -647,7 +647,7 @@ h2 .zh.block { margin-top: 3px; }
   font-size: var(--fs-sm);
 }
 .toggles label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
-.toggles .zh { margin-left: 0.1em; }
+.toggles .zh { display: none !important;  margin-left: 0.1em; }
 .toggles input { accent-color: var(--accent); width: 15px; height: 15px; margin: 0; }
 
 /* lookup */
@@ -725,7 +725,7 @@ h2 .zh.block { margin-top: 3px; }
 .zrow.zhead { font: 500 10.5px var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding-block: 0 4px; border-bottom: 1px solid var(--rule); }
 .zrow .r { text-align: right; }
 .zname { line-height: 1.25; }
-.zname .zh { font-size: var(--fs-xs); }
+.zname .zh { display: none !important;  font-size: var(--fs-xs); }
 .ztrack { position: relative; height: 10px; }
 .zbar {
   display: block;
@@ -742,7 +742,7 @@ h2 .zh.block { margin-top: 3px; }
 .p-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
 .p-head h3 { margin: 0; font-size: var(--fs-md); font-weight: 700; }
 .p-zh { margin: 0; }
-.p-zh .zh { margin-left: 0; font-size: var(--fs-sm); }
+.p-zh .zh { display: none !important;  margin-left: 0; font-size: var(--fs-sm); }
 .p-flag { font-size: var(--fs-xs); color: var(--muted); font-style: italic; }
 .p-status { margin: 3px 0 0; font-size: var(--fs-sm); }
 .p-fig { margin: 0; font-size: var(--fs-sm); color: var(--ink-2); }
@@ -791,7 +791,7 @@ h2 .zh.block { margin-top: 3px; }
   dominant-baseline: central;
   pointer-events: none;
 }
-.road-label .zh { font-family: var(--font-zh); font-weight: 400; fill: var(--muted); }
+.road-label .zh { display: none !important;  font-family: var(--font-zh); font-weight: 400; fill: var(--muted); }
 .line-key.road-k { border-top-width: 2px; }
 .line-key.road-motorway { border-top: 4px double var(--ink); height: 4px; }
 .line-key.road-primary { border-top: 2px solid var(--ink); }
@@ -863,7 +863,7 @@ h2 .zh.block { margin-top: 3px; }
 }
 .plan-legend li { display: grid; grid-template-columns: 14px 1fr; gap: 0 6px; align-items: start; }
 .plan-legend .sw { width: 14px; height: 10px; margin-top: 2px; border: 1px solid var(--ink); opacity: 0.85; }
-.plan-legend .zh { grid-column: 2; margin-left: 0; }
+.plan-legend .zh { display: none !important;  grid-column: 2; margin-left: 0; }
 .plan-ctrl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 4px 10px; margin-top: 12px; font-size: var(--fs-sm); }
 .plan-ctrl input[type="range"] { width: 100%; accent-color: var(--accent); }
 .plan-ctrl output { font: 500 11px var(--font-mono); color: var(--ink-2); min-width: 4.5em; text-align: right; }
@@ -880,7 +880,7 @@ h2 .zh.block { margin-top: 3px; }
 .btn-s[aria-pressed="true"] { background: var(--hl); color: var(--on-hl); border-color: var(--hl); }
 #adj-out { width: 100%; min-height: 9em; margin-top: 8px; padding: 6px; font: 11px/1.4 var(--font-mono); background: var(--field); color: var(--ink); border: 1px solid var(--rule); }
 h3.mini { margin: 16px 0 6px; font: 500 10.5px var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
+h3.mini .zh { display: none !important;  text-transform: none; letter-spacing: 0.02em; }
 .refs { display: grid; gap: 7px; margin: 0; padding: 0; list-style: none; font-size: var(--fs-sm); }
 .refs .src { font-size: var(--fs-xs); color: var(--muted); }
 
@@ -888,7 +888,7 @@ h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
 :root[data-style="program"] h1 { font-weight: 800; font-size: 29px; letter-spacing: -0.02em; }
 :root[data-style="program"] h1::before { content: "#"; color: var(--hl-text); }
 :root[data-style="program"] h1 i { font-style: normal; }
-:root[data-style="program"] h1 .zh { font-family: var(--font-zh); font-size: 0.55em; font-weight: 600; letter-spacing: 0.04em; }
+:root[data-style="program"] h1 .zh { display: none !important;  font-family: var(--font-zh); font-size: 0.55em; font-weight: 600; letter-spacing: 0.04em; }
 :root[data-style="program"] h2 { font-weight: 800; font-size: 21px; letter-spacing: -0.01em; }
 :root[data-style="program"] .sel-head h3 { font-weight: 800; font-size: 22px; letter-spacing: -0.01em; }
 :root[data-style="program"] .dlabel .l1 { font-style: normal; font-weight: 800; font-size: 17px; letter-spacing: -0.01em; }
@@ -906,6 +906,9 @@ h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
   * { transition: none !important; animation: none !important; }
 }
 
+.zh { display: none !important; }
+.l2 { display: none !important; }
+
 /* Vibrant 8-district colors */
 .vil.dist-66000010 { fill: #E11D48 !important; }
 .vil.dist-66000020 { fill: #F97316 !important; }
@@ -916,44 +919,7 @@ h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
 .vil.dist-66000070 { fill: #A855F7 !important; }
 .vil.dist-66000080 { fill: #EC4899 !important; }
 
-/* Dynamic palettes */
-:root[data-palette="emerald"] .vil.dist-66000010 { fill: #0D9488 !important; }
-:root[data-palette="emerald"] .vil.dist-66000020 { fill: #059669 !important; }
-:root[data-palette="emerald"] .vil.dist-66000030 { fill: #16A34A !important; }
-:root[data-palette="emerald"] .vil.dist-66000040 { fill: #10B981 !important; }
-:root[data-palette="emerald"] .vil.dist-66000050 { fill: #14B8A6 !important; }
-:root[data-palette="emerald"] .vil.dist-66000060 { fill: #0284C7 !important; }
-:root[data-palette="emerald"] .vil.dist-66000070 { fill: #0891B2 !important; }
-:root[data-palette="emerald"] .vil.dist-66000080 { fill: #22C55E !important; }
-
-:root[data-palette="sunset"] .vil.dist-66000010 { fill: #BE123C !important; }
-:root[data-palette="sunset"] .vil.dist-66000020 { fill: #DC2626 !important; }
-:root[data-palette="sunset"] .vil.dist-66000030 { fill: #EA580C !important; }
-:root[data-palette="sunset"] .vil.dist-66000040 { fill: #F59E0B !important; }
-:root[data-palette="sunset"] .vil.dist-66000050 { fill: #D97706 !important; }
-:root[data-palette="sunset"] .vil.dist-66000060 { fill: #9333EA !important; }
-:root[data-palette="sunset"] .vil.dist-66000070 { fill: #C026D3 !important; }
-:root[data-palette="sunset"] .vil.dist-66000080 { fill: #E11D48 !important; }
-
-:root[data-palette="nordic"] .vil.dist-66000010 { fill: #FDA4AF !important; }
-:root[data-palette="nordic"] .vil.dist-66000020 { fill: #FDBA74 !important; }
-:root[data-palette="nordic"] .vil.dist-66000030 { fill: #FDE047 !important; }
-:root[data-palette="nordic"] .vil.dist-66000040 { fill: #86EFAC !important; }
-:root[data-palette="nordic"] .vil.dist-66000050 { fill: #7DD3FC !important; }
-:root[data-palette="nordic"] .vil.dist-66000060 { fill: #A5B4FC !important; }
-:root[data-palette="nordic"] .vil.dist-66000070 { fill: #D8B4FE !important; }
-:root[data-palette="nordic"] .vil.dist-66000080 { fill: #6EE7B7 !important; }
-
-:root[data-palette="neon"] .vil.dist-66000010 { fill: #FF0055 !important; }
-:root[data-palette="neon"] .vil.dist-66000020 { fill: #FF7700 !important; }
-:root[data-palette="neon"] .vil.dist-66000030 { fill: #FFE600 !important; }
-:root[data-palette="neon"] .vil.dist-66000040 { fill: #00FF88 !important; }
-:root[data-palette="neon"] .vil.dist-66000050 { fill: #00E5FF !important; }
-:root[data-palette="neon"] .vil.dist-66000060 { fill: #7B2CBF !important; }
-:root[data-palette="neon"] .vil.dist-66000070 { fill: #B5179E !important; }
-:root[data-palette="neon"] .vil.dist-66000080 { fill: #FF007F !important; }
-
-.vil { fill-opacity: 0.65; transition: fill 0.2s ease, fill-opacity 0.2s ease; }
+.vil { fill-opacity: 0.60; transition: fill 0.2s ease, fill-opacity 0.2s ease; }
 .vil:hover { fill-opacity: 0.95 !important; stroke: #fff !important; stroke-width: 2px !important; }
 
 </style>
@@ -968,7 +934,7 @@ h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
 <div class="app" lang="en">
   <header class="top">
     <div>
-      <p class="eyebrow"><a href="https://github.com/wadikhalidanuar/2026HYD_Wadi" target="_blank">#2026HYD_Wadi</a> · Taichung Vibrant Map · 8 Districts & Shuinan</p>
+      <p class="eyebrow"><a href="https://github.com/wadikhalidanuar/2026HYD_Wadi" target="_blank">#2026HYD_Wadi</a> · Former Taichung City Base Map · 8 Districts & Shuinan</p>
       <h1>Former Taichung City <i>Base Map</i><span class="zh" lang="zh-Hant-TW">原臺中市基本圖</span></h1>
     </div>
     <div class="top-r">
@@ -1147,7 +1113,7 @@ h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
   };
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const clean = (s) => String(s ?? "").replace(/\s+/g, " ").trim();
-  const zh = (s, cls = "zh") => `<span class="${cls}" lang="zh-Hant-TW">${esc(s)}</span>`;
+  const zh = (s, cls = "zh") => "";
   const fmt = (n, d = 2) => n.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
   const ordinal = (n) => { const s = ["th", "st", "nd", "rd"], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); };
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -1243,7 +1209,7 @@ h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
   const makeLabel = (cls, l1, l2) => {
     const t = svgEl("text", { class: cls }, gLabels);
     svgEl("tspan", { class: "l1" }, t).textContent = l1;
-    svgEl("tspan", { class: "l2", lang: "zh-Hant-TW" }, t).textContent = l2;
+    /* l2 omitted for English-only */
     return t;
   };
   const placeLabel = (t, x, y, up, down) => {
@@ -1912,7 +1878,7 @@ h3.mini .zh { text-transform: none; letter-spacing: 0.02em; }
       const en = pr.name_en ? abbr(pr.name_en) : "";
       if (en) svgEl("tspan", {}, tp).textContent = en;
       if (pr.name) {
-        const z = svgEl("tspan", { class: "zh", lang: "zh-Hant-TW", dx: en ? "0.4em" : "0" }, tp);
+        /* zh road label omitted */
         z.textContent = pr.name;
       } else if (!en) {
         svgEl("tspan", {}, tp).textContent = pr.ref;
